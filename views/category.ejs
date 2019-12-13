@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        <%= title %>
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <%- include('inc/nav') %>
+
+        <div class="container">
+            <h1 class="text-center">Add Category</h1>
+            <form id="addCateForm" class=" p-3">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Name</label>
+                        <input type="text" class="form-control" id="categoryName" placeholder="Category Name">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+
+        <%- include('inc/footer') %>
+
+</body>
+
+</html>
